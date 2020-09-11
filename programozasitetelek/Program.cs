@@ -12,8 +12,21 @@ namespace programozasitetelek
         static void Main(string[] args)
         {
             tombkiiras();
+            osszegzes();
 
             Console.ReadKey();
+        }
+
+        private static void osszegzes()
+        {
+            int osszeg = 0;
+
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                osszeg += tomb[i];
+            }
+
+            Console.WriteLine("\n{0}",osszeg);
         }
 
         private static void tombkiiras()
