@@ -15,15 +15,28 @@ namespace programozasitetelek
             osszegzes();
             megszamolas();
             eldontes();
+            kivalasztas();
             
             Console.ReadKey();
+        }
+
+        private static void kivalasztas()
+        {
+            int i = 0;
+            while (tomb[i] != 50)
+            {
+                i++;
+            }
+            
+            Console.WriteLine("A tömb {0}. indexű eleme az 50", i);
+
         }
 
         private static void eldontes()
         {
             int i = 0;
-            bool r = false;
-            while (i < tomb.Length && tomb[i]!=69)
+            //bool r = false;
+            while (i < tomb.Length && tomb[i]!=69)  //for ciklussal breaket is használhatunk
             {
                 i++;
             }

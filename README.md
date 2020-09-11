@@ -24,3 +24,8 @@
  - Az eldontes() metódus létrehozésa
      - van-e a tömbben 69?
      - kiírni, hogy van/nincs
+
+## Kiválasztás
+ - A kivalasztas() metódus létrehozása
+     - hányadik az 50-es érték?
+     - kiírni a helyét a tömbben
