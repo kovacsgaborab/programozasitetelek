@@ -17,8 +17,41 @@ namespace programozasitetelek
             eldontes();
             kivalasztas();
             kereses();
-            
+            maximum();
+            minimum();
+
             Console.ReadKey();
+        }
+
+        private static void minimum()
+        {
+            int hely = 0;
+            int min = 1;
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                if (min>tomb[i])
+                {
+                    min = tomb[i];
+                    hely = i;
+                }
+            }
+            Console.WriteLine("A legkisebb szám a {0}, index helye {1}", min, hely);
+        }
+
+        private static void maximum()
+        {
+            int hely = 0;
+            int max = 1;
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                if (max<tomb[i])
+                {
+                    max = tomb[i];
+                    hely = i;
+                }
+            }
+
+            Console.WriteLine("A legnagyobb szám a tömbben a {0}, index helye {1}", max, hely);
         }
 
         private static void kereses()

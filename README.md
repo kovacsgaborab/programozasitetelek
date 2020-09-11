@@ -33,3 +33,8 @@
 ## Keresés (lineáris)
  - A kereses() metódus létrehozása
      - van-e benne 50, és ha van hányadik?
+
+## Maximum keresés
+ - A maximum()/minimum() metódus létrehozása
+     - a legnagyobb szám kiírása
+     - a legkisebb szám kiírása
