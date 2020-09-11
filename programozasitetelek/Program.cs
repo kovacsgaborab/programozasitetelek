@@ -13,8 +13,25 @@ namespace programozasitetelek
         {
             tombkiiras();
             osszegzes();
+            megszamolas();
 
+            
             Console.ReadKey();
+        }
+
+        private static void megszamolas()
+        {
+            int a = 0;
+
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                if (tomb[i]%3==0)
+                {
+                    a++;
+                }
+            }
+
+            Console.WriteLine("{0} darab 3-mal osztható szám van a tömbben", a);
         }
 
         private static void osszegzes()
