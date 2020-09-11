@@ -16,8 +16,28 @@ namespace programozasitetelek
             megszamolas();
             eldontes();
             kivalasztas();
+            kereses();
             
             Console.ReadKey();
+        }
+
+        private static void kereses()
+        {
+
+            int i = 0;
+
+            while (i < tomb.Length && tomb[i] != 50)
+            {
+                i++;
+            }
+            if (i < tomb.Length)
+            {
+                Console.WriteLine("Benne van az 50 a {0}. helyen /{1}. indexű helyen.", i, i+1);
+            }
+            else
+            {
+                Console.WriteLine("Nincs benne az 50.");
+            }
         }
 
         private static void kivalasztas()
