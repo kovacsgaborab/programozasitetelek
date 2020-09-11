@@ -14,9 +14,27 @@ namespace programozasitetelek
             tombkiiras();
             osszegzes();
             megszamolas();
-
+            eldontes();
             
             Console.ReadKey();
+        }
+
+        private static void eldontes()
+        {
+            int i = 0;
+            bool r = false;
+            while (i < tomb.Length && tomb[i]!=69)
+            {
+                i++;
+            }
+            if (i < tomb.Length)
+            {
+                Console.WriteLine("Van 69 a tömbben!");
+            }
+            else
+            {
+                Console.WriteLine("Nincs 69 a tömbben!");
+            }
         }
 
         private static void megszamolas()

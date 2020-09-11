@@ -19,3 +19,8 @@
  - A megszamolas() metódus létrehozása
      - írassuk ki hány 3-mal osztható szám van a tömbben
      - eredmény kiírása a console-ra
+
+## Eldöntés
+ - Az eldontes() metódus létrehozésa
+     - van-e a tömbben 69?
+     - kiírni, hogy van/nincs
